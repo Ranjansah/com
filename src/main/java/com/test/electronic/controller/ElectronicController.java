@@ -33,9 +33,9 @@ public class ElectronicController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST,value="/device")
-	public void addUniversity(@RequestBody Electronics ele)
+	public void addUniversity(@RequestBody Electronics customer)
 	{
-		eleservice.addDevice(ele);
+		eleservice.addCustomer(customer);
 	}
 
 	@RequestMapping(method=RequestMethod.PUT,value="/device/{id}")
